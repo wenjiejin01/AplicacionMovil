@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pruebas</string>
+    <string name="textoInicio">Hi what\'s up? Here we are</string>
+    <string name="textRegistro">REGISTER</string>
+    <string name="textIdentificacion">LOGIN</string>
+</resources>
