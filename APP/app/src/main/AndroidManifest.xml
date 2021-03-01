@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
         <activity android:name=".registerActivity"></activity>
+        <activity android:name=".compartir1"></activity>
+        <activity android:name=".compartir2"></activity>
+        <activity android:name=".vistaHoy"></activity>
         <activity
             android:name=".pantallaGeneral"
             android:label="@string/title_activity_pantalla_general" />
