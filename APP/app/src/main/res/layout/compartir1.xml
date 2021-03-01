@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".pantallaGeneral"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="412dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tint="@color/black"
+                app:srcCompat="@android:drawable/ic_menu_agenda" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tint="@color/cardview_dark_background"
+                app:srcCompat="@drawable/ic_home_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tint="@color/black"
+                app:srcCompat="@android:drawable/ic_menu_share" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="302dp"
+            android:layout_height="72dp"
+            android:text="Compartir Actividad"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="165dp"
+            android:layout_height="59dp"
+            android:checked="false"
+            android:text="Lunes 5/2"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="144dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="165dp"
+            android:layout_height="59dp"
+            android:text="Martes 6/2"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="363dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="165dp"
+            android:layout_height="59dp"
+            android:checked="true"
+            android:text="12:00 Tarea 4"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="423dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="165dp"
+            android:layout_height="59dp"
+            android:text="16:45 Tarea 3"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="291dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="165dp"
+            android:layout_height="59dp"
+            android:checked="true"
+            android:text="9:00 Tarea 1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="165dp"
+            android:layout_height="59dp"
+            android:checked="true"
+            android:text="10:30 Tarea 2"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="249dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="125dp"
+            android:layout_height="47dp"
+            android:text="Cancelar"
+            app:backgroundTint="@color/purple_500"
+            app:rippleColor="@color/cardview_dark_background"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="555dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="64dp"
+            android:layout_height="57dp"
+            android:background="@android:drawable/ic_menu_more"
+            android:rotation="270"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/button3"
+            app:layout_constraintTop_toTopOf="@+id/button3"
+            app:rippleColor="@color/black"
+            tools:layout_editor_absoluteX="302dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBox7"
+            app:layout_constraintTop_toTopOf="@+id/checkBox7"
+            app:srcCompat="@android:drawable/ic_notification_overlay"
+            tools:layout_editor_absoluteX="219dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/holo_green_light"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBox5"
+            app:layout_constraintTop_toTopOf="@+id/checkBox5"
+            app:srcCompat="@android:drawable/ic_notification_overlay"
+            tools:layout_editor_absoluteX="219dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/holo_green_light"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBox3"
+            app:layout_constraintTop_toTopOf="@+id/checkBox3"
+            app:srcCompat="@android:drawable/ic_notification_overlay"
+            tools:layout_editor_absoluteX="219dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/holo_orange_light"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBox4"
+            app:layout_constraintTop_toTopOf="@+id/checkBox4"
+            app:srcCompat="@android:drawable/ic_notification_overlay"
+            tools:layout_editor_absoluteX="219dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
