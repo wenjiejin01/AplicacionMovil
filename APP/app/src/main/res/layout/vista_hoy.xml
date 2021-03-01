@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".pantallaGeneral"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="412dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tint="@color/black"
+                app:srcCompat="@android:drawable/ic_menu_agenda" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tint="@color/cardview_dark_background"
+                app:srcCompat="@drawable/ic_home_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tint="@color/black"
+                app:srcCompat="@android:drawable/ic_menu_share" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="306dp"
+            android:layout_height="57dp"
+            android:text="Lunes 5/2"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="59dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="305dp"
+            android:layout_height="62dp"
+            android:text="Martes 3/5"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="258dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="295dp"
+            android:layout_height="56dp"
+            android:text="16:45 Tarea 3"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            tools:layout_editor_absoluteX="54dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="297dp"
+            android:layout_height="43dp"
+            android:text="10:30 Tarea 2"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="159dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="297dp"
+            android:layout_height="43dp"
+            android:text="10:00 Tarea 1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="116dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="297dp"
+            android:layout_height="43dp"
+            android:text="12:00 Tarea 4"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="315dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="17dp"
+            android:layout_height="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="@+id/imageView12"
+            app:layout_constraintStart_toStartOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="@+id/textView14"
+            app:layout_constraintVertical_bias="0.277"
+            app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="17dp"
+            android:layout_height="25dp"
+            android:tint="@android:color/holo_orange_light"
+            app:layout_constraintEnd_toEndOf="@+id/imageView10"
+            app:layout_constraintStart_toStartOf="@+id/imageView10"
+            app:srcCompat="@android:drawable/ic_notification_overlay"
+            tools:layout_editor_absoluteY="166dp" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="17dp"
+            android:layout_height="25dp"
+            android:tint="@android:color/holo_green_light"
+            app:srcCompat="@android:drawable/ic_notification_overlay"
+            tools:layout_editor_absoluteX="217dp"
+            tools:layout_editor_absoluteY="123dp" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="17dp"
+            android:layout_height="25dp"
+            android:tint="@android:color/holo_green_light"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"
+            app:srcCompat="@android:drawable/ic_notification_overlay"
+            tools:layout_editor_absoluteY="202dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="57dp"
+            android:layout_height="51dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+            app:layout_constraintTop_toTopOf="@+id/imageButton4"
+            app:srcCompat="@drawable/ic_dashboard_black_24dp"
+            tools:layout_editor_absoluteX="54dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="56dp"
+            android:layout_height="53dp"
+            android:tint="@color/black"
+            app:srcCompat="@android:drawable/ic_menu_add"
+            tools:layout_editor_absoluteX="315dp"
+            tools:layout_editor_absoluteY="550dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
