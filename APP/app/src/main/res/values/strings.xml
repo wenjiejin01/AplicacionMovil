@@ -5,4 +5,19 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="time_to_start">TIME TO START</string>
+    <string name="add_task">Añadir tarea</string>
+    <string name="tasktitle">Titulo</string>
+    <string name="taskdescription">Descripción</string>
+    <string name="taskbutton">Crear</string>
+    <string-array name="priority_array">
+        <item>No urgente</item>
+        <item>Urgente</item>
+        <item>Muy urgente</item>
+    </string-array>
+    <string-array name="notification_array">
+        <item>email</item>
+        <item>sms</item>
+        <item>móvil</item>
+        <item>sin notificación</item>
+    </string-array>
 </resources>
