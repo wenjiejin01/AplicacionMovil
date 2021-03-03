@@ -14,6 +14,7 @@
         tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="412dp"
             android:layout_height="55dp"
             android:layout_marginBottom="4dp"
@@ -55,8 +56,12 @@
             android:text="Compartir Actividad"
             android:textColor="@color/black"
             android:textSize="30sp"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="54dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.100000024" />
 
         <TextView
             android:id="@+id/textView4"
@@ -65,8 +70,12 @@
             android:text="Amigos"
             android:textColor="@color/black"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="43dp"
-            tools:layout_editor_absoluteY="126dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.394"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.195" />
 
         <CheckBox
             android:id="@+id/checkBox5"
@@ -75,8 +84,12 @@
             android:text="Amigo 3"
             android:textColor="@color/black"
             android:textSize="18sp"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="253dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.382" />
 
         <CheckBox
             android:id="@+id/checkBox3"
@@ -86,8 +99,12 @@
             android:text="Amigo 1"
             android:textColor="@color/black"
             android:textSize="18sp"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="167dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.248" />
 
         <CheckBox
             android:id="@+id/checkBox4"
@@ -97,8 +114,12 @@
             android:text="Amigo 2"
             android:textColor="@color/black"
             android:textSize="18sp"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="209dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.313" />
 
         <Button
             android:id="@+id/button3"
@@ -106,19 +127,27 @@
             android:layout_height="47dp"
             android:text="Cancelar"
             app:backgroundTint="@color/purple_500"
-            app:rippleColor="@color/cardview_dark_background"
-            tools:layout_editor_absoluteX="43dp"
-            tools:layout_editor_absoluteY="555dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.811"
+            app:rippleColor="@color/cardview_dark_background" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="125dp"
             android:layout_height="47dp"
-            android:text="Cancelar"
+            android:text="Compartir"
             app:backgroundTint="@color/purple_500"
-            app:rippleColor="@color/cardview_dark_background"
-            tools:layout_editor_absoluteX="235dp"
-            tools:layout_editor_absoluteY="555dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.811"
+            app:rippleColor="@color/cardview_dark_background" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

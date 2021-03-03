@@ -14,6 +14,7 @@
         tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="412dp"
             android:layout_height="55dp"
             android:layout_marginBottom="4dp"
@@ -55,8 +56,11 @@
             android:text="Compartir Actividad"
             android:textColor="@color/black"
             android:textSize="30sp"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="54dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.100000024" />
 
         <CheckBox
             android:id="@+id/checkBox2"
@@ -66,8 +70,12 @@
             android:text="Lunes 5/2"
             android:textColor="@color/black"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="144dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.205" />
 
         <CheckBox
             android:id="@+id/checkBox6"
@@ -76,19 +84,27 @@
             android:text="Martes 6/2"
             android:textColor="@color/black"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="363dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.541" />
 
         <CheckBox
             android:id="@+id/checkBox7"
             android:layout_width="165dp"
             android:layout_height="59dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
             android:checked="true"
             android:text="12:00 Tarea 4"
             android:textColor="@color/black"
             android:textSize="18sp"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="423dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.629" />
 
         <CheckBox
             android:id="@+id/checkBox5"
@@ -97,8 +113,12 @@
             android:text="16:45 Tarea 3"
             android:textColor="@color/black"
             android:textSize="18sp"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="291dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.431" />
 
         <CheckBox
             android:id="@+id/checkBox3"
@@ -108,8 +128,12 @@
             android:text="9:00 Tarea 1"
             android:textColor="@color/black"
             android:textSize="18sp"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="206dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.294" />
 
         <CheckBox
             android:id="@+id/checkBox4"
@@ -119,8 +143,12 @@
             android:text="10:30 Tarea 2"
             android:textColor="@color/black"
             android:textSize="18sp"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="249dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.364" />
 
         <Button
             android:id="@+id/button3"
@@ -128,9 +156,13 @@
             android:layout_height="47dp"
             android:text="Cancelar"
             app:backgroundTint="@color/purple_500"
-            app:rippleColor="@color/cardview_dark_background"
-            tools:layout_editor_absoluteX="43dp"
-            tools:layout_editor_absoluteY="555dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.181"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.818"
+            app:rippleColor="@color/cardview_dark_background" />
 
         <Button
             android:id="@+id/button5"
@@ -139,10 +171,13 @@
             android:background="@android:drawable/ic_menu_more"
             android:rotation="270"
             app:backgroundTint="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/button3"
-            app:layout_constraintTop_toTopOf="@+id/button3"
-            app:rippleColor="@color/black"
-            tools:layout_editor_absoluteX="302dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.844"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.82"
+            app:rippleColor="@color/black" />
 
         <ImageView
             android:id="@+id/imageView3"
