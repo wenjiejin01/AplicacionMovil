@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         // Variables para falsear el inicio de sesion
         val username = "aplicacion"
-        val password = "contraseña"
+        val password = "123"
 
         val lButton = findViewById<Button>(R.id.loginButton)
 
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         lButton.setOnClickListener {
             if (userInputField.text.toString().equals(username)){
                 if (passwordInputField.text.toString().equals(password)){
-                    val intentLogin = Intent(this, pantallaGeneral::class.java).apply {}
+                    val intentLogin = Intent(this, CalendarActivity::class.java).apply {}
                     startActivity(intentLogin)
                 }else {
                     Toast.makeText(this, "El usuario o la contraseña son incorrectas", Toast.LENGTH_SHORT).show()
