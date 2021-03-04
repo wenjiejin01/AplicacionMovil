@@ -168,7 +168,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
-            android:layout_marginRight="140dp"
+            android:layout_marginRight="100dp"
             app:srcCompat="@drawable/ic_dashboard_black_24dp" />
 
         <TextView
@@ -182,7 +182,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
-            android:layout_marginLeft="140dp"
+            android:layout_marginLeft="100dp"
             app:srcCompat="@android:drawable/ic_input_add" />
     </LinearLayout>
 
