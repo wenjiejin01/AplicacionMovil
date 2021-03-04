@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
-        <activity android:name=".vista_semana"></activity>
+        <activity android:name=".ConfigurationActivity"></activity>
+        <activity android:name=".vista_semana" />
         <activity android:name=".CalendarActivity" />
         <activity android:name=".SeeTask" />
         <activity android:name=".AddTask" />

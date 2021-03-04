@@ -25,27 +25,24 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/imageButton12"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:tint="@color/black"
                 app:srcCompat="@android:drawable/ic_menu_agenda" />
 
             <ImageButton
-                android:id="@+id/imageButton5"
+                android:id="@+id/imageButton13"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:tint="@color/cardview_dark_background"
-                app:srcCompat="@drawable/ic_home_black_24dp" />
+                app:srcCompat="@android:drawable/btn_star" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/imageButton14"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:tint="@color/black"
                 app:srcCompat="@android:drawable/ic_menu_share" />
         </LinearLayout>
 

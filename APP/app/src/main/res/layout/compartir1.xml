@@ -25,27 +25,24 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/imageButton9"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:tint="@color/black"
                 app:srcCompat="@android:drawable/ic_menu_agenda" />
 
             <ImageButton
-                android:id="@+id/imageButton5"
+                android:id="@+id/imageButton10"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:tint="@color/cardview_dark_background"
-                app:srcCompat="@drawable/ic_home_black_24dp" />
+                app:srcCompat="@android:drawable/btn_star" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/imageButton11"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:tint="@color/black"
                 app:srcCompat="@android:drawable/ic_menu_share" />
         </LinearLayout>
 
@@ -168,8 +165,8 @@
             android:id="@+id/button5"
             android:layout_width="64dp"
             android:layout_height="57dp"
-            android:background="@android:drawable/ic_menu_more"
-            android:rotation="270"
+            android:background="@android:drawable/ic_menu_send"
+            android:rotation="0"
             app:backgroundTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -183,41 +180,59 @@
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="178dp"
+            android:layout_marginRight="178dp"
             android:tint="@android:color/holo_red_dark"
             app:layout_constraintBottom_toBottomOf="@+id/checkBox7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkBox7"
             app:layout_constraintTop_toTopOf="@+id/checkBox7"
-            app:srcCompat="@android:drawable/ic_notification_overlay"
-            tools:layout_editor_absoluteX="219dp" />
+            app:srcCompat="@android:drawable/ic_notification_overlay" />
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="174dp"
+            android:layout_marginRight="174dp"
             android:tint="@android:color/holo_green_light"
             app:layout_constraintBottom_toBottomOf="@+id/checkBox5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkBox5"
             app:layout_constraintTop_toTopOf="@+id/checkBox5"
-            app:srcCompat="@android:drawable/ic_notification_overlay"
-            tools:layout_editor_absoluteX="219dp" />
+            app:srcCompat="@android:drawable/ic_notification_overlay" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="174dp"
+            android:layout_marginRight="174dp"
             android:tint="@android:color/holo_green_light"
             app:layout_constraintBottom_toBottomOf="@+id/checkBox3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkBox3"
             app:layout_constraintTop_toTopOf="@+id/checkBox3"
-            app:srcCompat="@android:drawable/ic_notification_overlay"
-            tools:layout_editor_absoluteX="219dp" />
+            app:srcCompat="@android:drawable/ic_notification_overlay" />
 
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="174dp"
+            android:layout_marginRight="174dp"
             android:tint="@android:color/holo_orange_light"
             app:layout_constraintBottom_toBottomOf="@+id/checkBox4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkBox4"
             app:layout_constraintTop_toTopOf="@+id/checkBox4"
-            app:srcCompat="@android:drawable/ic_notification_overlay"
-            tools:layout_editor_absoluteX="219dp" />
+            app:srcCompat="@android:drawable/ic_notification_overlay" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
