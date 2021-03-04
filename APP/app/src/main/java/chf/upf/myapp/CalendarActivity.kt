@@ -1,17 +1,15 @@
 package chf.upf.myapp
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.*
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.marginTop
-import java.text.SimpleDateFormat;
-import java.util.*
 import chf.upf.myapp.ui.CalendarClass
-import chf.upf.myapp.ui.CalendarInfo
 import com.google.gson.Gson
-import org.w3c.dom.Text
 import java.io.IOException
+import java.text.SimpleDateFormat
+import java.util.*
+
 
 class CalendarActivity : AppCompatActivity() {
 
@@ -32,23 +30,49 @@ class CalendarActivity : AppCompatActivity() {
 
         val calendarView = findViewById<CalendarView>(R.id.calendar);
         val today = findViewById<TextView>(R.id.dayInfo);
+        var mLinearLayout : LinearLayout = findViewById(R.id.Activitis) as LinearLayout
+        mLinearLayout.removeAllViews()
+        for (actividad in calendarDb.calendar){
+            if (actividad.Date.equals(currentDate)){
+                val new_layout = LinearLayout(this);
+                new_layout.setPadding(0, 5, 0, 5)
+                new_layout.isClickable = true;
+                new_layout.orientation = LinearLayout.HORIZONTAL;
+
+                val checkBox_dyn = CheckBox(this);
+                checkBox_dyn.setText("\t" + actividad.HoraInicio + " - " + actividad.HoraFinal + "\t" + actividad.Title)
+                checkBox_dyn.setPadding(10, 0, 0, 0)
+                new_layout.addView(checkBox_dyn)
+
+                mLinearLayout.addView(new_layout)
+
+            }
+        }
 
         calendarView.setOnDateChangeListener { calendarView, i1, i2, i3 ->
             val month = i2 + 1;
-            val date = format.format(format.parse("$i1-"+month+"-$i3"));
+            val date = format.format(format.parse("$i1-" + month + "-$i3"));
             if (date.equals(currentDate)) {
                 today.setText("Today")
             }else{
                 today.setText(date);
             }
+            var mLinearLayout : LinearLayout = findViewById(R.id.Activitis) as LinearLayout
+            mLinearLayout.removeAllViews()
             for (actividad in calendarDb.calendar){
                 if (actividad.Date.equals(date)){
                     val new_layout = LinearLayout(this);
                     new_layout.setPadding(0, 5, 0, 5)
-                    new_layout.setMargins()
+                    new_layout.isClickable = true;
+                    new_layout.orientation = LinearLayout.HORIZONTAL;
 
                     val checkBox_dyn = CheckBox(this);
-                    checkBox_dyn.setText("\t" + actividad.HoraInicio + actividad.Title)
+                    checkBox_dyn.setText("\t" + actividad.HoraInicio + " - " + actividad.HoraFinal + "\t" + actividad.Title)
+                    checkBox_dyn.setPadding(10, 0, 0, 0)
+                    new_layout.addView(checkBox_dyn)
+
+                    mLinearLayout.addView(new_layout)
+
                 }
             }
         }
