@@ -166,10 +166,10 @@
             android:id="@+id/floatingActionButton4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
             android:layout_weight="1"
             android:clickable="true"
-            android:layout_marginRight="100dp"
-            app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+            app:srcCompat="@android:drawable/ic_menu_view" />
 
         <TextView
             android:layout_width="wrap_content"

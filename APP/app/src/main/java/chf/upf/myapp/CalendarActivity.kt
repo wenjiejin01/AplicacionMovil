@@ -1,10 +1,13 @@
 package chf.upf.myapp
 
+import android.content.Intent
+import android.media.Image
 import android.os.Bundle
 import android.widget.*
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import chf.upf.myapp.ui.CalendarClass
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.gson.Gson
 import java.io.IOException
 import java.text.SimpleDateFormat
@@ -77,10 +80,25 @@ class CalendarActivity : AppCompatActivity() {
             }
         }
 
-        //        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-        //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-        //                    .setAction("Action", null).show()
-        //        }
+        // Conexiones
+        findViewById<FloatingActionButton>(R.id.floatingActionButton4).setOnClickListener {
+            val intentLogin = Intent(this, vista_semana::class.java).apply {}
+            startActivity(intentLogin)
+        }
+
+        findViewById<FloatingActionButton>(R.id.floatingActionButton5).setOnClickListener {
+            val intentLogin = Intent(this, AddTask::class.java).apply {}
+            startActivity(intentLogin)
+        }
+
+        // findViewById<ImageButton>(R.id.imageButton).setOnClickListener{
+        //    val intentLogin = Intent(this, AddTask::class.java).apply {}
+        //     startActivity(intentLogin)
+        // }
+
+
+
+
     }
 
     fun loadData(inFile: String):String{

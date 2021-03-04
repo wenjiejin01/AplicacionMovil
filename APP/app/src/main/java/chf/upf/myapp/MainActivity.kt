@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         lButton.setOnClickListener {
             if (userInputField.text.toString().equals(username)){
                 if (passwordInputField.text.toString().equals(password)){
-                    val intentLogin = Intent(this, vista_semana::class.java).apply {}
+                    val intentLogin = Intent(this, CalendarActivity::class.java).apply {}
                     startActivity(intentLogin)
                 }else {
                     Toast.makeText(this, "El usuario o la contraseña son incorrectas", Toast.LENGTH_SHORT).show()
@@ -42,11 +42,6 @@ class MainActivity : AppCompatActivity() {
             val intentRegister = Intent(this, registerActivity::class.java).apply {}
             startActivity(intentRegister)
         }
-
-
-
-
-
     }
 
 }
