@@ -6,6 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import chf.upf.myapp.ui.CalendarInfo
+import com.google.gson.Gson
+import java.io.BufferedWriter
+import java.io.FileWriter
 
 class AddTask : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +31,23 @@ class AddTask : AppCompatActivity() {
 
         val newtaskbutton : Button = findViewById<Button>(R.id.task_button)
         newtaskbutton.setOnClickListener {
+
+            val title = findViewById<EditText>(R.id.tasktitle)
+            val description = findViewById<EditText>(R.id.taskdescrip)
+            val dia = findViewById<EditText>(R.id.taskdate)
+            val init = findViewById<EditText>(R.id.inittime)
+            val end = findViewById<EditText>(R.id.endtime)
+            val priority = findViewById<Spinner>(R.id.task_priority)
+            val notifi = findViewById<Spinner>(R.id.task_notification)
+
+            val tarea = CalendarInfo(title.toString(), description.toString(), dia.toString(), init.toString(),end.toString(),priority.toString(),notifi.toString(),false)
+            val gson = Gson()
+            val json = gson.toJson(tarea)
+
+            val file = "date.json"
+            val path = "assets.openFd(file)"
+            val bw = BufferedWriter(FileWriter(path, true))
+            bw.write(json)
 
             val intenttask = Intent(this, SeeTask::class.java).apply{}
             startActivity(intenttask)

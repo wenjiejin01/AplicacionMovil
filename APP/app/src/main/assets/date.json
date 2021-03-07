@@ -6,8 +6,8 @@
       "Descripcion": "",
       "HoraInicio": "9:00",
       "HoraFinal": "10:30",
-      "Prioridad": 2,
-      "Notificacion": ["Movil", "Mail"],
+      "Prioridad": "2",
+      "Notificacion": "Movil",
       "done": true
     },
     {
@@ -16,8 +16,8 @@
       "Descripcion": "",
       "HoraInicio": "10:30",
       "HoraFinal": "11:30",
-      "Prioridad": 2,
-      "Notificacion":["Mail"],
+      "Prioridad": "2",
+      "Notificacion":"Mail",
       "done": true
     },
     {
@@ -26,8 +26,8 @@
       "Descripcion": "blablabalbal",
       "HoraInicio": "12:00",
       "HoraFinal": "15:30",
-      "Prioridad": 1,
-      "Notificacion":["Mail"],
+      "Prioridad": "1",
+      "Notificacion":"Mail",
       "done": false
     },
     {
@@ -36,8 +36,8 @@
       "Descripcion": "",
       "HoraInicio": "7:00",
       "HoraFinal": "16:30",
-      "Prioridad": 2,
-      "Notificacion":["Mail", "Movil"],
+      "Prioridad": "2",
+      "Notificacion":"Mail",
       "done": false
     },
     {
@@ -46,8 +46,8 @@
       "Descripcion": "",
       "HoraInicio": "11:30",
       "HoraFinal": "12:30",
-      "Prioridad": 2,
-      "Notificacion":["Mobil"],
+      "Prioridad": "2",
+      "Notificacion":"Mobil",
       "done": false
     },
     {
@@ -56,8 +56,8 @@
       "Descripcion": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "HoraInicio": "13:00",
       "HoraFinal": "18:30",
-      "Prioridad": 1,
-      "Notificacion":["Mail", "Movil"],
+      "Prioridad": "1",
+      "Notificacion":"Mail",
       "done": false
     }
   ]
