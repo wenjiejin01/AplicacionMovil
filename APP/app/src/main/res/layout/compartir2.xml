@@ -119,7 +119,7 @@
             app:layout_constraintVertical_bias="0.313" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/cancelar_compartir1"
             android:layout_width="125dp"
             android:layout_height="47dp"
             android:text="Cancelar"
@@ -133,7 +133,7 @@
             app:rippleColor="@color/cardview_dark_background" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/compartir_actividad"
             android:layout_width="125dp"
             android:layout_height="47dp"
             android:text="Compartir"

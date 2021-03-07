@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="chf.upf.myapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
-        <activity android:name=".ConfigurationActivity"></activity>
+        <activity android:name=".StudyActivity" />
+        <activity android:name=".ConfigurationActivity" />
         <activity android:name=".vista_semana" />
         <activity android:name=".CalendarActivity" />
         <activity android:name=".SeeTask" />
@@ -18,9 +22,7 @@
         <activity android:name=".compartir1" />
         <activity android:name=".compartir2" />
         <activity android:name=".vistaHoy" />
-        <activity
-            android:name=".pantallaGeneral"
-            android:label="@string/title_activity_pantalla_general" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
