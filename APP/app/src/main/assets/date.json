@@ -7,7 +7,8 @@
       "HoraInicio": "9:00",
       "HoraFinal": "10:30",
       "Prioridad": 2,
-      "Notificacion": ["Movil", "Mail"]
+      "Notificacion": ["Movil", "Mail"],
+      "done": true
     },
     {
       "Date": "2021-03-03",
@@ -16,7 +17,8 @@
       "HoraInicio": "10:30",
       "HoraFinal": "11:30",
       "Prioridad": 2,
-      "Notificacion":["Mail"]
+      "Notificacion":["Mail"],
+      "done": true
     },
     {
       "Date": "2021-03-03",
@@ -25,7 +27,8 @@
       "HoraInicio": "12:00",
       "HoraFinal": "15:30",
       "Prioridad": 1,
-      "Notificacion":["Mail"]
+      "Notificacion":["Mail"],
+      "done": false
     },
     {
       "Date":"2021-03-04",
@@ -34,7 +37,8 @@
       "HoraInicio": "7:00",
       "HoraFinal": "16:30",
       "Prioridad": 2,
-      "Notificacion":["Mail", "Movil"]
+      "Notificacion":["Mail", "Movil"],
+      "done": false
     },
     {
       "Date": "2021-03-05",
@@ -43,7 +47,8 @@
       "HoraInicio": "11:30",
       "HoraFinal": "12:30",
       "Prioridad": 2,
-      "Notificacion":["Mobil"]
+      "Notificacion":["Mobil"],
+      "done": false
     },
     {
       "Date": "2021-03-05",
@@ -52,7 +57,8 @@
       "HoraInicio": "13:00",
       "HoraFinal": "18:30",
       "Prioridad": 1,
-      "Notificacion":["Mail", "Movil"]
+      "Notificacion":["Mail", "Movil"],
+      "done": false
     }
   ]
 }

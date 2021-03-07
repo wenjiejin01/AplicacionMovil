@@ -1,7 +1,6 @@
 package chf.upf.myapp
 
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.widget.*
 import android.widget.LinearLayout
@@ -9,7 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import chf.upf.myapp.ui.CalendarClass
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.gson.Gson
+import java.io.FileOutputStream
 import java.io.IOException
+import java.io.OutputStreamWriter
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -24,7 +25,6 @@ class CalendarActivity : AppCompatActivity() {
         val gson = Gson();
         val json = loadData("date.json")
         val calendarDb : CalendarClass = gson.fromJson(json, CalendarClass::class.javaObjectType)
-
         // Set head data information
         val format = SimpleDateFormat("yyyy-MM-dd")
         val currentDate = format.format(System.currentTimeMillis())
@@ -35,7 +35,7 @@ class CalendarActivity : AppCompatActivity() {
         val today = findViewById<TextView>(R.id.dayInfo);
         var mLinearLayout : LinearLayout = findViewById(R.id.Activitis) as LinearLayout
         mLinearLayout.removeAllViews()
-        for (actividad in calendarDb.calendar){
+        for (actividad in calendarDb.calendar) {
             if (actividad.Date.equals(currentDate)){
                 val new_layout = LinearLayout(this);
                 new_layout.setPadding(0, 5, 0, 5)
@@ -45,6 +45,9 @@ class CalendarActivity : AppCompatActivity() {
                 val checkBox_dyn = CheckBox(this);
                 checkBox_dyn.setText("\t" + actividad.HoraInicio + " - " + actividad.HoraFinal + "\t" + actividad.Title)
                 checkBox_dyn.setPadding(10, 0, 0, 0)
+                if (actividad.done) {
+                    checkBox_dyn.isChecked = true;
+                }
                 new_layout.addView(checkBox_dyn)
 
                 mLinearLayout.addView(new_layout)
@@ -72,6 +75,9 @@ class CalendarActivity : AppCompatActivity() {
                     val checkBox_dyn = CheckBox(this);
                     checkBox_dyn.setText("\t" + actividad.HoraInicio + " - " + actividad.HoraFinal + "\t" + actividad.Title)
                     checkBox_dyn.setPadding(10, 0, 0, 0)
+                    if (actividad.done) {
+                        checkBox_dyn.isChecked = true;
+                    }
                     new_layout.addView(checkBox_dyn)
 
                     mLinearLayout.addView(new_layout)
@@ -79,6 +85,8 @@ class CalendarActivity : AppCompatActivity() {
                 }
             }
         }
+
+
 
         // Conexiones
         findViewById<FloatingActionButton>(R.id.floatingActionButton4).setOnClickListener {
@@ -90,15 +98,6 @@ class CalendarActivity : AppCompatActivity() {
             val intentLogin = Intent(this, AddTask::class.java).apply {}
             startActivity(intentLogin)
         }
-
-        // findViewById<ImageButton>(R.id.imageButton).setOnClickListener{
-        //    val intentLogin = Intent(this, AddTask::class.java).apply {}
-        //     startActivity(intentLogin)
-        // }
-
-
-
-
     }
 
     fun loadData(inFile: String):String{
@@ -116,5 +115,4 @@ class CalendarActivity : AppCompatActivity() {
 
         return tContents;
     }
-
 }

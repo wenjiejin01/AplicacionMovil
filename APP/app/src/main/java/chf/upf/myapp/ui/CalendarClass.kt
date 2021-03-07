@@ -11,5 +11,6 @@ data class CalendarInfo (
     val HoraInicio: String,
     val HoraFinal: String,
     val Prioridad: Int,
-    val Notificacion: List<String>
+    val Notificacion: List<String>,
+    val done: Boolean
 )

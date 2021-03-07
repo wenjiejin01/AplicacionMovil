@@ -11,7 +11,7 @@ class vista_semana : AppCompatActivity() {
         setContentView(R.layout.activity_vista_semana)
 
         findViewById<FloatingActionButton>(R.id.floatingActionButton4).setOnClickListener {
-            val intentLogin = Intent(this, CalendarActivity::class.java).apply {}
+            val intentLogin = Intent(this, vistaHoy::class.java).apply {}
             startActivity(intentLogin)
         }
 
