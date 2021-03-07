@@ -40,12 +40,13 @@ class AddTask : AppCompatActivity() {
             val priority = findViewById<Spinner>(R.id.task_priority)
             val notifi = findViewById<Spinner>(R.id.task_notification)
 
-            val tarea = CalendarInfo(title.toString(), description.toString(), dia.toString(), init.toString(),end.toString(),priority.toString(),notifi.toString(),false)
+            val tarea = CalendarInfo(title.text.toString(), description.text.toString(), dia.text.toString(),
+                    init.text.toString(),end.text.toString(),priority.toString(),notifi.toString(),false)
             val gson = Gson()
             val json = gson.toJson(tarea)
 
             val file = "date.json"
-            val path = "assets.openFd(file)"
+            val path = "android.assets.openFd($file)"
             val bw = BufferedWriter(FileWriter(path, true))
             bw.write(json)
 
