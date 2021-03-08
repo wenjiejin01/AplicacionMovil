@@ -52,6 +52,7 @@ class AddTask : AppCompatActivity() {
 
             val intenttask = Intent(this, SeeTask::class.java).apply{}
             startActivity(intenttask)
+            Toast.makeText(this, "La tarea ha sido creada correctamente", Toast.LENGTH_SHORT).show()
 
         }
 

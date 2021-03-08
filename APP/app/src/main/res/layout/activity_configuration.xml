@@ -29,7 +29,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.018"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@android:drawable/ic_menu_manage" />
 
         <LinearLayout
             android:id="@+id/linearLayout5"
