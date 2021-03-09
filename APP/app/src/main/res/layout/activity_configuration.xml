@@ -20,16 +20,16 @@
             android:layout_width="98dp"
             android:layout_height="99dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="216dp"
-            android:layout_marginRight="216dp"
+            android:layout_marginEnd="236dp"
+            android:layout_marginRight="236dp"
             android:layout_marginBottom="32dp"
+            android:src="@drawable/peerfil"
             app:layout_constraintBottom_toBottomOf="@+id/linearLayout6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.533"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.018"
-            tools:srcCompat="@android:drawable/ic_menu_manage" />
+            app:layout_constraintVertical_bias="0.018" />
 
         <LinearLayout
             android:id="@+id/linearLayout5"
@@ -52,7 +52,7 @@
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_myplaces" />
+                    android:src="@drawable/friends" />
 
                 <Button
                     android:id="@+id/friendsconfigButton"
@@ -74,7 +74,7 @@
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+                    android:src="@drawable/estudio" />
 
                 <Button
                     android:id="@+id/studyButton"
@@ -96,7 +96,7 @@
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    app:srcCompat="@android:drawable/btn_star_big_off" />
+                    android:src="@drawable/estadisticas" />
 
                 <Button
                     android:id="@+id/statsButton"
@@ -118,7 +118,7 @@
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_manage" />
+                    android:src="@drawable/config" />
 
                 <Button
                     android:id="@+id/configButton"
@@ -148,7 +148,7 @@
                 android:layout_width="4dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_menu_set_as" />
+                android:src="@drawable/cerrarsesion" />
 
             <Button
                 android:id="@+id/closeSessionButton"

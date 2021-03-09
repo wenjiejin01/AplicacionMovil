@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
-        <activity android:name=".Stats"></activity>
+        <activity android:name=".SeeFriends"></activity>
+        <activity android:name=".Stats" />
         <activity android:name=".StudyActivity" />
         <activity android:name=".ConfigurationActivity" />
         <activity android:name=".vista_semana" />
