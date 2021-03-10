@@ -30,7 +30,7 @@ class ConfigurationActivity : AppCompatActivity() {
 
 
         findViewById<Button>(R.id.studyButton).setOnClickListener {
-            val intentStudy = Intent(this, StudyActivity::class.java).apply {}
+            val intentStudy = Intent(this, StudyTech::class.java).apply {}
             startActivity(intentStudy)
         }
 

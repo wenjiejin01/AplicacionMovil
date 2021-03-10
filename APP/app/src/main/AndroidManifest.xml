@@ -12,9 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
-        <activity android:name=".SeeFriends"></activity>
+        <activity android:name=".StudyTech"></activity>
+        <activity android:name=".SeeFriends" />
         <activity android:name=".Stats" />
-        <activity android:name=".StudyActivity" />
+        <activity android:name=".PomodoroActivity" />
         <activity android:name=".ConfigurationActivity" />
         <activity android:name=".vista_semana" />
         <activity android:name=".CalendarActivity" />
