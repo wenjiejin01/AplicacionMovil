@@ -1,7 +1,7 @@
 package chf.upf.myapp.ui
 
 data class CalendarClass(
-        val calendar: List<CalendarInfo>
+        val calendar: ArrayList<CalendarInfo>
 )
 
 data class CalendarInfo (

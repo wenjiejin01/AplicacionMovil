@@ -1,21 +1,29 @@
+
 package chf.upf.myapp
 
+import android.Manifest
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.content.pm.PackageManager
 import android.os.Bundle
-import android.view.View
+import android.os.Environment
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import chf.upf.myapp.ui.CalendarClass
 import chf.upf.myapp.ui.CalendarInfo
 import com.google.gson.Gson
-import java.io.BufferedWriter
-import java.io.FileWriter
+import java.io.*
+import java.util.*
+
 
 class AddTask : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_task)
 
+        // Spinner priority
         val spinner_priority: Spinner = findViewById(R.id.task_priority)
         ArrayAdapter.createFromResource(this, R.array.priority_array, android.R.layout.simple_spinner_item).also { adapter ->
             // Specify the layout to use when the list of choices appears
@@ -29,31 +37,12 @@ class AddTask : AppCompatActivity() {
             spinner_not.adapter = adapter
         }
 
+
+        // Sent botton.
         val newtaskbutton : Button = findViewById<Button>(R.id.task_button)
         newtaskbutton.setOnClickListener {
-
-            val title = findViewById<EditText>(R.id.tasktitle)
-            val description = findViewById<EditText>(R.id.taskdescrip)
-            val dia = findViewById<EditText>(R.id.taskdate)
-            val init = findViewById<EditText>(R.id.inittime)
-            val end = findViewById<EditText>(R.id.endtime)
-            val priority = findViewById<Spinner>(R.id.task_priority)
-            val notifi = findViewById<Spinner>(R.id.task_notification)
-
-            val tarea = CalendarInfo(title.text.toString(), description.text.toString(), dia.text.toString(),
-                    init.text.toString(),end.text.toString(),priority.toString(),notifi.toString(),false)
-            val gson = Gson()
-            val json = gson.toJson(tarea)
-
-            val file = "date.json"
-            val path = "android.assets.openFd($file)"
-            val bw = BufferedWriter(FileWriter(path, true))
-            bw.write(json)
-
-            val intenttask = Intent(this, SeeTask::class.java).apply{}
-            startActivity(intenttask)
-
+            val intentLogin = Intent(this, Calendario_vista2::class.java).apply {}
+            startActivity(intentLogin)
         }
-
     }
 }

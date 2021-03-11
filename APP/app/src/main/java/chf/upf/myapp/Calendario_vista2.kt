@@ -1,30 +1,23 @@
 package chf.upf.myapp
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import android.widget.LinearLayout
-import androidx.appcompat.app.AppCompatActivity
 import chf.upf.myapp.ui.CalendarClass
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.gson.Gson
-import java.io.FileOutputStream
 import java.io.IOException
-import java.io.OutputStreamWriter
 import java.text.SimpleDateFormat
-import java.util.*
-import android.widget.ImageButton
 
-
-class CalendarActivity : AppCompatActivity() {
-
+class Calendario_vista2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calendar)
+        setContentView(R.layout.activity_calendario_vista2)
 
         //Load datefile
         val gson = Gson();
-        val json = loadData("date.json")
+        val json = loadData("date2.json")
         val calendarDb : CalendarClass = gson.fromJson(json, CalendarClass::class.javaObjectType)
         // Set head data information
         val format = SimpleDateFormat("yyyy-MM-dd")
@@ -127,7 +120,7 @@ class CalendarActivity : AppCompatActivity() {
 
     }
 
-    fun loadData(inFile: String):String{
+    fun loadData(inFile: String):String {
         var tContents = ""
         try {
             val stream = assets.open(inFile)
@@ -136,7 +129,7 @@ class CalendarActivity : AppCompatActivity() {
             stream.read(buffer)
             stream.close()
             tContents = String(buffer)
-        } catch (e: IOException){
+        } catch (e: IOException) {
 
         }
 
