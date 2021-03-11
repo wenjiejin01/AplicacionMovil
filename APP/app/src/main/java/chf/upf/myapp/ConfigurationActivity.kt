@@ -19,13 +19,29 @@ class ConfigurationActivity : AppCompatActivity() {
         }
 
         findViewById<ImageButton>(R.id.imageButton16).setOnClickListener {
-            val intentLogin = Intent(this, vista_semana::class.java).apply {}
-            startActivity(intentLogin)
+            val intentVistaSemana = Intent(this, vista_semana::class.java).apply {}
+            startActivity(intentVistaSemana)
         }
 
         findViewById<ImageButton>(R.id.imageButton17).setOnClickListener {
-            val intentLogin = Intent(this, compartir1::class.java).apply {}
-            startActivity(intentLogin)
+            val intentVistaCompartir = Intent(this, compartir1::class.java).apply {}
+            startActivity(intentVistaCompartir)
+        }
+
+
+        findViewById<Button>(R.id.studyButton).setOnClickListener {
+            val intentStudy = Intent(this, StudyTech::class.java).apply {}
+            startActivity(intentStudy)
+        }
+
+        findViewById<Button>(R.id.statsButton).setOnClickListener {
+            val intentStats = Intent(this, Stats::class.java).apply {}
+            startActivity(intentStats)
+        }
+
+        findViewById<Button>(R.id.friendsconfigButton).setOnClickListener {
+            val intentFriedns = Intent(this, SeeFriends::class.java).apply {}
+            startActivity(intentFriedns)
         }
 
     }
