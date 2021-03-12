@@ -34,21 +34,49 @@
                 android:textColor="#000000"
                 app:backgroundTint="#E4C4C4" />
 
-            <Button
-                android:id="@+id/botonTecnica2"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TECNICA 2"
-                android:textColor="#000000"
-                app:backgroundTint="#E4C4C4" />
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/botonTecnica3"
+                <Button
+                    android:id="@+id/botonTecnica2"
+                    android:layout_width="321dp"
+                    android:layout_height="wrap_content"
+                    android:text="TECNICA 2"
+                    android:textColor="#000000"
+                    app:backgroundTint="#E4C4C4" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/premium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TECNICA 3"
-                android:textColor="#000000"
-                app:backgroundTint="#E4C4C4" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/botonTecnica3"
+                    android:layout_width="321dp"
+                    android:layout_height="wrap_content"
+                    android:text="TECNICA 3"
+                    android:textColor="#000000"
+                    app:backgroundTint="#E4C4C4" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/premium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
