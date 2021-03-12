@@ -31,8 +31,8 @@ class vista_senama_jueves : AppCompatActivity() {
             val intentLogin = Intent(this, vista_semana_next::class.java).apply {}
             startActivity(intentLogin)
         }
-        val btn_lunes = findViewById<Button>(R.id.btn_lunes);
-        btn_lunes.setOnClickListener{
+        val btn_viernes = findViewById<Button>(R.id.btn_viernes);
+        btn_viernes.setOnClickListener{
             val intentLogin = Intent(this, vista_semana::class.java).apply {}
             startActivity(intentLogin)
         }

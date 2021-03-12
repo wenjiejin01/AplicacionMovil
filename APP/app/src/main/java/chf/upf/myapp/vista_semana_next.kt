@@ -31,8 +31,8 @@ class vista_semana_next : AppCompatActivity() {
             startActivity(intentLogin)
         }
 
-        val btn_lunes = findViewById<Button>(R.id.btn_lunes);
-        btn_lunes.isPressed = true;
+        val btn_viernes = findViewById<Button>(R.id.btn_viernes);
+        btn_viernes.isPressed = true;
 
 
         // Botton general

@@ -33,8 +33,8 @@ class vista_semana : AppCompatActivity() {
             val intentLogin = Intent(this, vista_semana_next::class.java).apply {}
             startActivity(intentLogin)
         }
-        val btn_lunes = findViewById<Button>(R.id.btn_lunes);
-        btn_lunes.isPressed = true;
+        val btn_viernes = findViewById<Button>(R.id.btn_viernes);
+        btn_viernes.isPressed = true;
 
         val btn_jueves = findViewById<Button>(R.id.btn_jueves);
         btn_jueves.setOnClickListener{
@@ -45,7 +45,7 @@ class vista_semana : AppCompatActivity() {
 
         // Botton general
         findViewById<FloatingActionButton>(R.id.floatingActionButton4).setOnClickListener {
-            val intentLogin = Intent(this, vistaHoy::class.java).apply {}
+            val intentLogin = Intent(this, CalendarActivity::class.java).apply {}
             startActivity(intentLogin)
         }
 
