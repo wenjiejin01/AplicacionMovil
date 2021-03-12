@@ -17,14 +17,19 @@ class configuracion_premium : AppCompatActivity() {
             startActivity(intentCloseSession)
         }
 
-        findViewById<ImageButton>(R.id.imageButton16).setOnClickListener {
-            val intentVistaSemana = Intent(this, vista_semana::class.java).apply {}
-            startActivity(intentVistaSemana)
+        findViewById<ImageButton>(R.id.config).setOnClickListener {
+            val intentLogin = Intent(this, ConfigurationActivity::class.java).apply {}
+            startActivity(intentLogin)
         }
 
-        findViewById<ImageButton>(R.id.imageButton17).setOnClickListener {
-            val intentVistaCompartir = Intent(this, compartir1::class.java).apply {}
-            startActivity(intentVistaCompartir)
+        findViewById<ImageButton>(R.id.menu).setOnClickListener {
+            val intentLogin = Intent(this, vista_semana::class.java).apply {}
+            startActivity(intentLogin)
+        }
+
+        findViewById<ImageButton>(R.id.menu_compartir).setOnClickListener {
+            val intentLogin = Intent(this, compartir1::class.java).apply {}
+            startActivity(intentLogin)
         }
 
 

@@ -18,12 +18,12 @@ class ConfigurationActivity : AppCompatActivity() {
             startActivity(intentCloseSession)
         }
 
-        findViewById<ImageButton>(R.id.imageButton16).setOnClickListener {
+        findViewById<ImageButton>(R.id.menu).setOnClickListener {
             val intentVistaSemana = Intent(this, vista_semana::class.java).apply {}
             startActivity(intentVistaSemana)
         }
 
-        findViewById<ImageButton>(R.id.imageButton17).setOnClickListener {
+        findViewById<ImageButton>(R.id.menu_compartir).setOnClickListener {
             val intentVistaCompartir = Intent(this, compartir1::class.java).apply {}
             startActivity(intentVistaCompartir)
         }
