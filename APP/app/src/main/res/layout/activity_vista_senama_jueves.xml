@@ -313,6 +313,8 @@
                         android:layout_height="match_parent"
                         android:text="actividad jueves"
                         android:textSize="16dp"
+                        android:background="@drawable/actividad_completa"
+                        android:paddingLeft="30dp"
                         android:gravity="center_vertical"
                         android:layout_weight="1"/>
                 </LinearLayout>
@@ -335,6 +337,8 @@
                         android:layout_height="match_parent"
                         android:text="actividad jueves"
                         android:textSize="16dp"
+                        android:background="@drawable/actividad_completa"
+                        android:paddingLeft="30dp"
                         android:gravity="center_vertical"
                         android:layout_weight="1"/>
                 </LinearLayout>
@@ -357,6 +361,8 @@
                         android:layout_height="match_parent"
                         android:text="actividad jueves"
                         android:textSize="16dp"
+                        android:background="@drawable/actividad_completa"
+                        android:paddingLeft="30dp"
                         android:gravity="center_vertical"
                         android:layout_weight="1"/>
                 </LinearLayout>
@@ -379,6 +385,8 @@
                         android:layout_height="match_parent"
                         android:text="actividad jueves"
                         android:textSize="16dp"
+                        android:background="@drawable/actividad_completa"
+                        android:paddingLeft="30dp"
                         android:gravity="center_vertical"
                         android:layout_weight="1"/>
                 </LinearLayout>
@@ -401,6 +409,8 @@
                         android:layout_height="match_parent"
                         android:text="actividad jueves"
                         android:textSize="16dp"
+                        android:background="@drawable/actividad_completa"
+                        android:paddingLeft="30dp"
                         android:gravity="center_vertical"
                         android:layout_weight="1"/>
                 </LinearLayout>
@@ -423,6 +433,8 @@
                         android:layout_height="match_parent"
                         android:text="actividad jueves"
                         android:textSize="16dp"
+                        android:background="@drawable/actividad_completa"
+                        android:paddingLeft="30dp"
                         android:gravity="center_vertical"
                         android:layout_weight="1"/>
                 </LinearLayout>
@@ -445,6 +457,8 @@
                         android:layout_height="match_parent"
                         android:text="actividad jueves"
                         android:textSize="16dp"
+                        android:background="@drawable/actividad_completa"
+                        android:paddingLeft="30dp"
                         android:gravity="center_vertical"
                         android:layout_weight="1"/>
                 </LinearLayout>
@@ -467,6 +481,8 @@
                         android:layout_height="match_parent"
                         android:text="actividad jueves"
                         android:textSize="16dp"
+                        android:background="@drawable/actividad_completa"
+                        android:paddingLeft="30dp"
                         android:gravity="center_vertical"
                         android:layout_weight="1"/>
                 </LinearLayout>
@@ -487,7 +503,6 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="actividad jueves"
                         android:textSize="16dp"
                         android:gravity="center_vertical"
                         android:layout_weight="1"/>
