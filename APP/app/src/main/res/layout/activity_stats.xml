@@ -44,7 +44,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/textViewstat1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
@@ -62,15 +62,15 @@
                 android:src="@drawable/stats"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewstat1" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/textViewstat2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Tareas"
-                android:textSize="24sp"
+                android:text="Distribución de Actividades por hora"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView8"
@@ -80,18 +80,18 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="283dp"
-                android:src="@drawable/stats"
+                android:src="@drawable/numeroact"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewstat2" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/textViewstat3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Tareas"
-                android:textSize="24sp"
+                android:text="Actividades Acumuladas durante 12 - 03 - 2021"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView8"
@@ -101,10 +101,10 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="283dp"
-                android:src="@drawable/stats"
+                android:src="@drawable/cdfact"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewstat3" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
