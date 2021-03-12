@@ -17,17 +17,13 @@ class StudyTech : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.botonTecnica2).setOnClickListener {
-            Toast.makeText(this, "Debes de ser usuario Premium para acceder " +
-                    "a esta funcionalidad", Toast.LENGTH_SHORT).show()
-
-            // añadir el intent para acceder a la activiadad de comprar version premium
+            val intentP = Intent(this, Pagament::class.java).apply {  }
+            startActivity(intentP)
         }
 
         findViewById<Button>(R.id.botonTecnica3).setOnClickListener {
-            Toast.makeText(this, "Debes de ser usuario Premium para acceder " +
-                    "a esta funcionalidad", Toast.LENGTH_SHORT).show()
-
-            // añadir el intent para acceder a la activiadad de comprar version premium
+            val intentP = Intent(this, Pagament::class.java).apply {  }
+            startActivity(intentP)
         }
     }
 }

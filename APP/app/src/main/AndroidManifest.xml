@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
-        <activity android:name=".Pagament"></activity>
+        <activity android:name=".study_tech_premium"></activity>
+        <activity android:name=".Pagament" />
         <activity android:name=".vista_senama_jueves" />
         <activity android:name=".vista_semana_next" />
         <activity android:name=".vista_semana_anterior" />
