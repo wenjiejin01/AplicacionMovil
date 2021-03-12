@@ -29,7 +29,7 @@ class configuracion_premium : AppCompatActivity() {
 
 
         findViewById<Button>(R.id.studyButton).setOnClickListener {
-            val intentStudy = Intent(this, StudyTech::class.java).apply {}
+            val intentStudy = Intent(this, study_tech_premium::class.java).apply {}
             startActivity(intentStudy)
         }
 
