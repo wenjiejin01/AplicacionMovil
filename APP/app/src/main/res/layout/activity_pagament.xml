@@ -21,11 +21,10 @@
             android:gravity="center_horizontal"
             android:paddingTop="30dp"
             android:paddingBottom="30dp"
-            android:text="Compras tu Time to Start Premium"
+            android:text="Compra tu Time to Start Premium"
             android:textColor="@color/white"
             android:textSize="24dp"
-            android:textStyle="bold|italic"
-            />
+            android:textStyle="bold|italic" />
         <LinearLayout
             android:id="@+id/ventajas"
             android:layout_width="match_parent"
@@ -41,9 +40,9 @@
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="4"
-                    app:srcCompat="?attr/actionModeShareDrawable" />
+                    android:src="@drawable/compartir" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -65,9 +64,11 @@
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_weight="4"
-                    app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+                    android:src="@drawable/estudiar" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -118,7 +119,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
-                    app:srcCompat="?attr/actionModeCopyDrawable"
+                    android:src="@drawable/duplicar"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     />
 
                 <TextView
@@ -143,19 +146,19 @@
                 <ImageView
                     android:id="@+id/imageView16"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="4"
-                    app:srcCompat="?attr/actionModeCopyDrawable"
+                    android:src="@drawable/mejoramiento"
                     />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Augmentar rendimiento."
-                    android:textSize="18dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp"/>
+                    android:paddingBottom="10dp"
+                    android:text="Aumentar rendimiento."
+                    android:textSize="18dp" />
 
             </LinearLayout>
         </LinearLayout>
@@ -165,12 +168,12 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/botonPago"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1.99€ \n Facturado mensualmente"
-                android:gravity="center"
                 android:backgroundTint="#4FC958"
-                />
+                android:gravity="center"
+                android:text="1.99€/mes \n Facturado mensualmente" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
