@@ -14,10 +14,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
-        <activity android:name=".Calendario_vista2"></activity>
+        <activity android:name=".vista_senama_jueves"></activity>
+        <activity android:name=".vista_semana_next" />
+        <activity android:name=".vista_semana_anterior" />
+        <activity android:name=".Calendario_vista2" />
         <activity android:name=".MainActivity2" />
         <activity android:name=".StudyActivity" />
-        <activity android:name=".StudyTech"></activity>
+        <activity android:name=".StudyTech" />
         <activity android:name=".SeeFriends" />
         <activity android:name=".Stats" />
         <activity android:name=".PomodoroActivity" />
