@@ -37,7 +37,7 @@ class vista_semana_next : AppCompatActivity() {
 
         // Botton general
         findViewById<FloatingActionButton>(R.id.floatingActionButton4).setOnClickListener {
-            val intentLogin = Intent(this, vistaHoy::class.java).apply {}
+            val intentLogin = Intent(this, CalendarActivity::class.java).apply {}
             startActivity(intentLogin)
         }
 

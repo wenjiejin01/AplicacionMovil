@@ -61,10 +61,10 @@
 
         <CheckBox
             android:id="@+id/checkBox2"
-            android:layout_width="165dp"
-            android:layout_height="59dp"
+            android:layout_width="299dp"
+            android:layout_height="54dp"
             android:checked="false"
-            android:text="Lunes 5/2"
+            android:text="Domingo 14/03"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -76,9 +76,9 @@
 
         <CheckBox
             android:id="@+id/checkBox6"
-            android:layout_width="165dp"
-            android:layout_height="59dp"
-            android:text="Martes 6/2"
+            android:layout_width="264dp"
+            android:layout_height="53dp"
+            android:text="Lunes 15/03"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -95,7 +95,7 @@
             android:layout_marginStart="52dp"
             android:layout_marginLeft="52dp"
             android:checked="true"
-            android:text="12:00 Tarea 4"
+            android:text="09:30 Deporte 4"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -103,11 +103,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.629" />
 
+
         <CheckBox
             android:id="@+id/checkBox5"
             android:layout_width="165dp"
             android:layout_height="59dp"
-            android:text="16:45 Tarea 3"
+            android:text="15:00 Desarrollo kotlin"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -122,7 +123,7 @@
             android:layout_width="165dp"
             android:layout_height="59dp"
             android:checked="true"
-            android:text="9:00 Tarea 1"
+            android:text="10:30 Deporte"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
@@ -137,7 +138,7 @@
             android:layout_width="165dp"
             android:layout_height="59dp"
             android:checked="true"
-            android:text="10:30 Tarea 2"
+            android:text="12:30 Estudiar Aplicacion movil"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"

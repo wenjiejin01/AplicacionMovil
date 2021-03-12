@@ -8,27 +8,37 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="241dp"
-        android:layout_height="123dp"
+        android:layout_width="245dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="TIME TO START"
+        android:text="@string/time_to_start"
         app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="136dp"
+        android:layout_height="113dp"
+        android:src="@drawable/timetostart"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.383">
+        app:layout_constraintVertical_bias="0.734">
+
 
         <EditText
             android:id="@+id/userText"
