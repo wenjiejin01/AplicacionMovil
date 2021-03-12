@@ -6,11 +6,10 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 
-class ConfigurationActivity : AppCompatActivity() {
+class configuracion_premium : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_configuration)
-
+        setContentView(R.layout.activity_configuracion_premium)
 
         val closeSession = findViewById<Button>(R.id.closeSessionButton)
         closeSession.setOnClickListener {
@@ -35,7 +34,7 @@ class ConfigurationActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.statsButton).setOnClickListener {
-            val intentStats = Intent(this, Pagament::class.java).apply {}
+            val intentStats = Intent(this, Stats::class.java).apply {}
             startActivity(intentStats)
         }
 
@@ -43,6 +42,5 @@ class ConfigurationActivity : AppCompatActivity() {
             val intentFriedns = Intent(this, SeeFriends::class.java).apply {}
             startActivity(intentFriedns)
         }
-
     }
 }

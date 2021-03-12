@@ -11,7 +11,7 @@ class Pagament : AppCompatActivity() {
         setContentView(R.layout.activity_pagament)
 
         findViewById<Button>(R.id.botonPago).setOnClickListener{
-            val intentP = Intent(this, study_tech_premium::class.java).apply {  }
+            val intentP = Intent(this, configuracion_premium::class.java).apply {  }
             startActivity(intentP)
         }
     }
